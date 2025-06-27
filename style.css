@@ -1,0 +1,211 @@
+/* ===== MOBILE RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  .header {
+    padding: 15px 4%;
+  }
+
+  .netflix-logo {
+    height: 30px; /* Smaller logo */
+  }
+
+  .nav-right {
+    gap: 15px; /* Reduced gap between icons */
+  }
+
+  .search-icon {
+    font-size: 20px; /* Smaller search icon */
+  }
+
+  .bell-icon {
+    font-size: 18px; /* Smaller bell icon */
+  }
+
+  .notification-badge {
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
+  }
+
+  .profile {
+    height: 28px;
+    width: 28px; /* Smaller profile icon */
+  }
+
+  /* Video background adjustments */
+  .hero {
+    height: 60vh; /* Shorter hero section */
+  }
+
+  .hero-content {
+    margin-top: 80px; /* Adjusted positioning */
+    padding: 0 20px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem; /* Smaller title */
+    letter-spacing: 5px; /* Reduced spacing */
+    margin-bottom: 15px;
+  }
+
+  .hero-desc {
+    font-size: 14px; /* Smaller description */
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 10px 20px; /* Smaller buttons */
+    font-size: 1rem;
+    justify-content: center;
+  }
+
+  /* Video iframe scaling adjustment */
+  .iframe-wrapper {
+    transform: translate(-50%, -50%) scale(1.8); /* Increased scale for better coverage */
+  }
+}
+
+/* Additional adjustment for very small devices */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-desc {
+    font-size: 13px;
+  }
+
+  .iframe-wrapper {
+    transform: translate(-50%, -50%) scale(2.2); /* Even more scaling for small screens */
+  }
+}
+
+/* ===== LANGUAGE BUTTONS MOBILE ADJUSTMENT ===== */
+@media (max-width: 768px) {
+  .season-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+    gap: 8px; /* Smaller gap */
+  }
+
+  .season-button {
+    padding: 6px 10px; /* Smaller padding */
+    font-size: 12px; /* Smaller font */
+    border-radius: 3px; /* Slightly rounded */
+    text-align: center; /* Center text */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ... if text too long */
+  }
+}
+
+/* Additional adjustment for very small devices */
+@media (max-width: 480px) {
+  .season-buttons {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 buttons per row on very small screens */
+  }
+
+  .season-button {
+    font-size: 14px; /* Even smaller font */
+    padding: 15px 8px;
+  }
+}
+
+/* ===== PLAYBACK WARNING BANNER MOBILE OPTIMIZATION ===== */
+@media (max-width: 768px) {
+  .nf-playback-warning {
+    position: absolute;
+    right: 45px; /* Position next to buttons */
+    top: 12px;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-family: "Poppins", sans-serif;
+    max-width: 160px;
+    text-align: center;
+    z-index: 10;
+    animation: fadeIn 0.3s ease;
+    line-height: 1.3;
+    border-left: 3px solid #e50914;
+  }
+
+  /* Extra small devices */
+  @media (max-width: 480px) {
+    .nf-playback-warning {
+      max-width: 130px;
+      font-size: 10px;
+      padding: 4px 8px;
+      right: 40px;
+      display: none; /* Completely hide on very small screens */
+    }
+  }
+
+  /* Portrait orientation */
+  @media (max-width: 768px) and (orientation: portrait) {
+    .nf-playback-warning {
+      top: auto;
+      bottom: 60px;
+      right: 50%;
+      transform: translateX(50%);
+      max-width: 80%;
+      background: rgba(229, 9, 20, 0.9);
+      font-weight: bold;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== VIDEO STALL WARNING - MOBILE ONLY ===== */
+@media (max-width: 768px) {
+  .nf-playback-warning {
+    /* Positioning */
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 70px;
+    top: auto;
+
+    /* Size & Layout */
+    width: 90%;
+    max-width: 300px;
+    padding: 8px 12px;
+
+    /* Typography */
+    font-size: 12px;
+    line-height: 1.4;
+
+    /* Visual */
+    background: rgba(229, 9, 20, 0.9);
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Phones in portrait */
+@media (max-width: 480px) {
+  .nf-playback-warning {
+    font-size: 11px;
+    padding: 6px 10px;
+    bottom: 60px;
+  }
+}
