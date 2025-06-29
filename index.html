@@ -1579,6 +1579,16 @@
             transform: scale(1.1) rotate(-10deg);
             transition: color 0.3s, opacity 0.3s, transform 0.3s;
         }
+
+
+        .anchor-tag-report {
+            color: none;
+            /* color: #ff000d; */
+            text-decoration: none;
+            font-weight: 600;
+            /* font-size: 1.2rem; */
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
     </style>
 
     <link rel="stylesheet" href="style.css">
@@ -2045,6 +2055,66 @@
 
         <div class="nf-posts-row">
             <!-- Post 1 -->
+
+            <div class="nf-post" onclick="openModal('The Movie', 'https://movieshub.rpmplay.xyz/#nrugl')">
+                <img src="https://m.media-amazon.com/images/M/MV5BMzE3YTljNjctNjJkNy00NDNiLWE5YTUtMzI0NTA1ZDYwNWNlXkEyXkFqcGc@._V1_.jpg"
+                    alt="Behind The Scenes" class="nf-post-image">
+
+                <h3 class="nf-post-caption">Maa (HQ)</h3> <!-- Simple heading added here -->
+                <div class="nf-post-hover">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="nf-post-badge">NEW</div>
+                <h2 class="nf-simple-heading">The Games Have Changed</h2>
+
+            </div>
+
+
+
+            <div class="nf-post" onclick="openModal('The Movie', 'https://movieshub.rpmplay.xyz/#e6joi')">
+                <img src="https://m.media-amazon.com/images/M/MV5BOWRiOThkM2YtYzI4NS00OWViLTk0ODMtMjNlNDYyZWQ3MzNjXkEyXkFqcGc@._V1_.jpg"
+                    alt="Behind The Scenes" class="nf-post-image">
+
+                <h3 class="nf-post-caption">F1 The Movie</h3> <!-- Simple heading added here -->
+                <div class="nf-post-hover">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="nf-post-badge">NEW</div>
+                <h2 class="nf-simple-heading">The Games Have Changed</h2>
+
+            </div>
+
+
+            <div class="nf-post" onclick="openModal('Raid 2', 'https://movieshub.rpmplay.xyz/#qjscc')">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTdhMjA2NWMtNmVkOC00ODdiLTgwNjItNWQ5ZGI1ZTEzODI1XkEyXkFqcGc@._V1_.jpg"
+                    alt="Behind The Scenes" class="nf-post-image">
+
+                <h3 class="nf-post-caption">Kannappa (HQ)</h3> <!-- Simple heading added here -->
+                <div class="nf-post-hover">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="nf-post-badge">NEW</div>
+                <h2 class="nf-simple-heading">The Games Have Changed</h2>
+
+            </div>
+
+
+
+            <div class="nf-post" onclick="openModal('Raid 2', 'https://movieshub.rpmplay.xyz/#zo1rm')">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjQyOTRiYTQtNzU0MS00ZGM2LWE4MTktODI5ZjZiN2NkYjYyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                    alt="Behind The Scenes" class="nf-post-image">
+
+                <h3 class="nf-post-caption">Raid 2</h3> <!-- Simple heading added here -->
+                <div class="nf-post-hover">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="nf-post-badge">NEW</div>
+                <h2 class="nf-simple-heading">The Games Have Changed</h2>
+
+            </div>
+
+
+
             <div class="nf-post" onclick="openModal('Housefull 5A', 'https://bigwarp.io/embed-3utpykbmqpha.html')">
                 <img src="https://m.media-amazon.com/images/M/MV5BZmIzMThjNTYtNjkwZi00NmM3LTliNGItZWIxYTUwMGU1YzM0XkEyXkFqcGc@._V1_.jpg"
                     alt="Behind The Scenes" class="nf-post-image">
@@ -2053,7 +2123,6 @@
                 <div class="nf-post-hover">
                     <i class="fas fa-play"></i>
                 </div>
-                <div class="nf-post-badge">NEW</div>
                 <h2 class="nf-simple-heading">The Games Have Changed</h2>
 
             </div>
@@ -2066,7 +2135,6 @@
                 <div class="nf-post-hover">
                     <i class="fas fa-play"></i>
                 </div>
-                <div class="nf-post-badge">NEW</div>
                 <h2 class="nf-simple-heading">The Games Have Changed</h2>
             </div>
 
@@ -2141,8 +2209,8 @@
             <div class="nf-modal-header">
 
 
-                <div class="nf-playback-warning"> If video stalls: 1) Switch to fullscreen 2) Tap 4x if using ad
-                    blocker</div>
+                <div class="nf-playback-warning"> If video stalls: Switch to fullscreen or Disable ADBlocker
+                </div>
                 <button class="nf-fullscreen-btn" onclick="toggleFullscreen()">
                     <i class="fas fa-expand"></i>
                 </button>
